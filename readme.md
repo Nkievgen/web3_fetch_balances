@@ -1,6 +1,6 @@
 A simple API app that fetches token addresses from Gecko API and then fetches balances of each token for a given address. It only includes non-zero balance tokens in an API responce / write job.
 
-To configure the app create a .env file in the root folder and provide a listen port in a PORT variable and an ethereum node address for web3.js library in a PROVIDER variable. Also install dependencies via 'npm install --save' command. Compiled code is stored in the './dist' folder, if you want to recompile it run 'npm install --save-dev' to install dependencies necessary for compilation.
+To configure the app create a .env file in the root folder and provide a listen port in a PORT variable and an ethereum node HTTPS address for web3.js library in a PROVIDER variable. Also install dependencies via 'npm install --save' command. Compiled code is stored in the './dist' folder, if you want to recompile it run 'npm install --save-dev' to install dependencies necessary for compilation.
 
 API can be launched via 'node dist/index.js' or 'npm start' commands.
 API listens for requests on /balance route on a port specified in .env file, requests should have 'address' query parameter that specifies the wallet address.
