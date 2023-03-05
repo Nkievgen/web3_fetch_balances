@@ -5,6 +5,6 @@ dotenv.config();
 
 const provider = process.env.PROVIDER;
 
-const web3 = new Web3(new Web3.providers.HttpProvider(provider));
+const web3 = new Web3(new Web3.providers.HttpProvider(String(provider)));
 
 export default web3;
