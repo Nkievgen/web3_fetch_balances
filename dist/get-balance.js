@@ -61,7 +61,7 @@ const getTokenBalances = async (walletAddress, tokenList) => {
                 }
             }
             catch (error) {
-                console.log(`failed to get the balance of ${token.name} token at address ${walletAddress}`);
+                continue;
             }
         }
     }
