@@ -9,28 +9,28 @@ https://localhost:3000/balance?address=0xA145ac099E3d2e9781C9c848249E2e6b256b030
 
 Responce example:
 {
-        message: 'Balances fetched successfuly',
-        data: [
-            {
-                "token": {
-                    "id": "ethereum",
-                    "symbol": "eth",
-                    "name": "Ethereum"
-                },
-                "balance": "0.000002366788536"
+    message: 'Balances fetched successfuly',
+    data: [
+        {
+            "token": {
+                "id": "ethereum",
+                "symbol": "eth",
+                "name": "Ethereum"
             },
-            {
-                "token": {
-                    "id": "gsenetwork",
-                    "symbol": "gse",
-                    "name": "GSENetwork",
-                    "address": "0xe530441f4f73bdb6dc2fa5af7c3fc5fd551ec838"
-                },
-                "balance": "92"
+            "balance": "0.000002366788536"
+        },
+        {
+            "token": {
+                "id": "gsenetwork",
+                "symbol": "gse",
+                "name": "GSENetwork",
+                "address": "0xe530441f4f73bdb6dc2fa5af7c3fc5fd551ec838"
             },
-            ...
-        ]
-    }
+            "balance": "92"
+        },
+        ...
+    ]
+}
 
 To configure the write job, set an address in job-config.json in the "address" property.
 Write job can be launched via 'node dist/write-job-schedule.js' or 'npm run write' commands. It will write fetched data in the balance.json file in the root folder within a one minute interval after end of each job.
