@@ -76,7 +76,7 @@ const getTokenBalances = async (walletAddress: string, tokenList: tokenObject[])
                     nonZeroBalances.push(result);
                 }
             } catch (error: unknown) {
-                console.log(`failed to get the balance of ${token.name} token at address ${walletAddress}`);
+                continue;
             }
         }
     };
