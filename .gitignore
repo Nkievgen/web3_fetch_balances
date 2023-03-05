@@ -1,3 +1,4 @@
 node_modules
 .env
 balance.json
+job-config.json
